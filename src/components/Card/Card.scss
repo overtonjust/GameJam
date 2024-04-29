@@ -1,0 +1,54 @@
+$black: #333333;
+$orange: #F39237;
+$purple: #9C23A9;
+$blue: #009ddc;
+$snow: #F4EDED;
+
+
+
+
+.card{
+    height: 14em;
+    width: 14em;
+    border-radius: 4%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 20% 20%;
+    align-items: center;
+    place-items: center;
+    padding: 4%;
+    box-shadow: 0 0 .4em $purple;
+
+    &__img-holder{
+        height: 100%;
+        width: 100%;
+        grid-row: 1;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4%;
+        cursor: pointer;
+    }
+
+    &__title{
+        font-size: 1.6em;
+        color: $blue;
+        cursor: pointer;
+    }
+    
+    &__button{
+        width: 60%;
+        border-radius: 40px;
+        padding: 4%;
+        outline: none;
+        border: $snow;
+        font-size: 1.4em;
+        background-color: $blue;
+        color: $snow;
+        text-shadow: .05em .05em .05em $purple;
+        cursor: pointer;
+    }
+}

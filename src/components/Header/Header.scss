@@ -1,0 +1,28 @@
+$black: #333333;
+$orange: #F39237;
+$purple: #9C23A9;
+$blue: #009ddc;
+$snow: #F4EDED;
+
+
+.header {
+    grid-column: span 3;
+    height: 100%;
+    width: 100%;
+    max-width: fit-content;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-size: 8em;
+        color: $snow;
+        text-shadow: .05em .05em .05em $purple;
+        margin-right: .4em;
+    }
+
+    &__logo{
+        height: 6em;
+        width: 6em;
+    }
+}
