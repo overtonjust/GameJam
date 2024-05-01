@@ -7,13 +7,12 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    padding-left: 12%;
-    padding-right: 4%;
+    padding: 2% 4% 2% 12%;
     overflow-y: auto;
 
     
     &__bubble{
-        height: max-content;
+        height: 100%;
         grid-column: 1;
         display: grid;
         grid-template-columns: repeat(auto-fit, 18em);
@@ -24,75 +23,116 @@
 
     &__aside {
         grid-column: 2;
-        padding: 4%;
-        background-color: gray;
+        background-color: $darkBlue;
+        opacity: .9;
+        border-radius: 2rem;
+        box-shadow: 0 0 .4em $black;
+        padding: 4% 0% 0% 2%;
         display: grid;
         grid-template-rows: 20% 80%;
     }
 
-    &__img {
-        width: 100px;
-        height: 100px;
-        grid-column: 2;
-        grid-row: span 2;
-    }
-
+    
     &__title {
         grid-row: 1;
         height: 100%;
-        width: 100%;
-        font-size: 3em;
+        width: 90%;
+        align-self: center;
+        place-self: center;
+        font-size: $largeFont;
         text-align: center;
+        border-radius: 1rem 1rem 0 0;
         color: $snow;
-        text-shadow: .05em .05em .05em $purple;
+        border-bottom: 2px solid $black;
     }
-
+    
     &__content {
         grid-row: 2;
         height: 100%;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    &__winner {
+        padding: 2% 8%;
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 40% 30% 30%;
+    }
+    
+    &__winner {
+        grid-row: 1;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+    }
+    
+    &__winner-text {
+        grid-column: 1;
+        line-height: 2em;
     }
 
-    &__order, &__opt {
+    &__victor {
+        font-size: $mediumFont;
+        color: $snow;
+    }
+
+    &__vote {
+        color: $snow;
+        font-size: $smallFont;
+    }
+
+    &__highlight {
+        color: $orange;
+    }
+
+    &__img {
+        width: 6em;
+        height: 6em;
+        border-radius: 50%;
+        grid-column: 2;
+    }
+
+    &__link {
+        color: $orange;
+    }
+    
+    &__order {
+        grid-row: 2;
         display: flex;
         justify-content: space-between;
     }
 
+    &__list, &__document{
+        font-size: $mediumFont;
+        color: $snow;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+
+    &__item {
+        font-size: $smallFont;
+        color: $cyan;
+        align-self: center;
+    }
+
+    &__opt {
+        grid-row: 3;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__guide{
+        display: flex;
+        flex-direction: column;
+        gap: 6%;
+    }
+
+
     &__icon {
         font-size: 2em;
-        color: $snow;
+        align-self: center;
+        color: $cyan;
     }
 }
 
-p {
-    font-size: 1.4em;
-    color: $snow;
-    text-shadow: .05em .05em .05em $purple;
-}
 
-ul {
-    font-size: 1.2em;
-    color: $orange;
-    text-shadow: .05em .05em .05em $purple;
-}
-
-.winnername {
-    grid-column: 1;
-    grid-row: 1;
- 
-}
-
-.winnerlink {
-    grid-column: 1;
-    grid-row: 2;
-   
-}

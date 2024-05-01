@@ -1,18 +1,27 @@
 @import '/src/styles/shared.scss';
 
 .card{
-    min-width: fit-content;
-    width: 16em;
-    min-height: fit-content;
-    height: 16em;
+    position: relative;
+    width: calc(18 * 2vw);
+    max-width: 16em;
+    height: calc(18 * 2vh);
+    max-height: 16em;
     border-radius: 12%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60% 20% 20%;
+    grid-template-rows: 60% 15% 25%;
     align-items: center;
     place-items: center;
-    box-shadow: -.4em .4em 1.4em $blue;
+    box-shadow: $lightShadow;
 
+
+    &__info {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        font-size: $smallIcon;
+        color: $darkBlue;
+    }
 
     &__image {
         grid-row: 1;
@@ -24,21 +33,24 @@
     }
 
     &__title{
-        font-size: 1.6em;
-        color: $blue;
+        font-size: max($mediumFont, 1.4em);
+        color: $darkBlue;
         cursor: pointer;
     }
     
     &__button{
-        width: 60%;
+        width: 40%;
         border-radius: 40px;
-        padding: 4%;
+        padding: 2%;
         outline: none;
         border: $snow;
-        font-size: 1.4em;
-        background-color: $blue;
+        font-size: max($mediumFont, 1em);
+        background-color: $darkBlue;
         color: $snow;
-        text-shadow: .05em .05em .05em $purple;
         cursor: pointer;
+    }
+
+    &__button:active {
+        transform: translateY(.2em);
     }
 }

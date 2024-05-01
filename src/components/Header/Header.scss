@@ -11,13 +11,14 @@
     gap: 2em;
 
     &__title {
-        font-size: 8em;
-        color: $snow;
-        text-shadow: .05em .05em .05em $purple;
+        font-size: $headerFont;
+        background: $background;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     &__logo{
-        height: 6em;
-        width: 6em;
+        height: 3vh;
+        width: 2vw;
     }
 }

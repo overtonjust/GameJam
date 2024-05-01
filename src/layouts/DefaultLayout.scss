@@ -1,9 +1,11 @@
-@use '/src/styles/shared.scss';
+@import '/src/styles/shared.scss';
+
 
 
 .container {
     height: 100%;
     width: 100%;
+    background: $darkPurple;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% auto 10%;

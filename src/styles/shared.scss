@@ -1,5 +1,19 @@
 $black: #333333;
+$background: linear-gradient(90deg, rgba(244,237,237,1) 0%, rgba(25,11,40,1) 100%);
+$darkPurple: #190B28;
 $orange: #F39237;
-$purple: #9C23A9;
-$blue: #009ddc;
+$logoPurp: #9C23A9;
+$darkBlue: #41658A;
+$brown: #7A542E;
 $snow: #F4EDED;
+$cyan: #30BCED;
+$green: #21BD26;
+
+$headerFont: calc(5 * (1vh + 1vw));
+$largeFont: calc(1.6 * (1vh + 1vw));
+$mediumFont: calc(.8 * (1vh + 1vw));
+$smallFont: calc(.6* (1vh + 1vw));
+
+$smallIcon: calc(1 * (1vh + 1vw));
+
+$lightShadow: .2em .2em .2em $black;

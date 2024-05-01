@@ -1,8 +1,9 @@
-@use '/src/styles/shared.scss';
+@import '/src/styles/shared.scss';
 
 body {
-    background-image: url('./assets/Dice.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: $darkPurple;
+    // background-image: url('./assets/Dice.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
 }

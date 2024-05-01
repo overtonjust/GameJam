@@ -14,11 +14,9 @@ function DefaultLayout() {
             <header className="container__header">
                 <Header />  
             </header>
-
             <main className="container__main">
                 <Outlet/>
             </main>
-
             <footer className="container__footer">
                 <Footer/>
             </footer>
