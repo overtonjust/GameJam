@@ -1,0 +1,36 @@
+@import '/src/styles/shared.scss';
+
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__author {
+        color: $snow;
+        margin-left: 1%;
+        margin-right: 4%;
+    }
+
+    &__img {
+        height: 4em;
+        width: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 12%;
+    }
+
+    &__icon {
+        height: 2em;
+        width: 2em;
+        color: $snow;
+    }
+}

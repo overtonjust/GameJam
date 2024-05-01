@@ -1,0 +1,24 @@
+@use '/src/styles/shared.scss';
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% auto 10%;
+    row-gap: 1em;
+    
+    &__header {
+        grid-row: 1;
+        grid-column: span 3;
+    }
+    
+    &__main {
+        grid-row: 2;        
+    }
+
+    &__footer {
+        grid-row: 3;
+    }
+}

@@ -10,17 +10,17 @@
         }
     },
     {
-        "id":"click24",
-        "title": "Clicker Game",
+        "id":"click25",
+        "title": "Drinks Menu",
         "description": "Clicker Game is an incremental game where each click earns you endless dopamine! There are various unlocks that will appear as you collect points and even a few that are hidden for you to find.",
-        "type": "game",
+        "type": "document",
         "image": {
             "src": "https://images.unsplash.com/photo-1506464253090-7af30fe60a71?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "alt": "Clicker Game screenshot"
         }
     },
     {
-        "id":"click24",
+        "id":"click26",
         "title": "Clicker Game",
         "description": "Clicker Game is an incremental game where each click earns you endless dopamine! There are various unlocks that will appear as you collect points and even a few that are hidden for you to find.",
         "type": "game",
@@ -29,4 +29,5 @@
             "alt": "Clicker Game screenshot"
         }
     }
+    
 ]

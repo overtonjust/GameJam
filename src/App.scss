@@ -1,37 +1,8 @@
-$black: #333333;
-$orange: #F39237;
-$purple: #9C23A9;
-$blue: #009ddc;
-$snow: #F4EDED;
-
+@use '/src/styles/shared.scss';
 
 body {
-    background-color: $black;
-}
-
-.container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 12em auto;
-    align-items: center;
-    place-items: center;
-    row-gap: 1em;
-    
-    &__row {
-        grid-row: 1;
-    }
-    
-    &__list {
-        grid-row: 2;
-        width: 100vw;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 16em);
-        grid-template-rows: auto;
-        align-items: center;
-        place-items: center;
-        padding: 2%;
-        row-gap: 2em;
-        overflow-y: auto;
-    }
+    background-image: url('./assets/Dice.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
