@@ -12,7 +12,7 @@
     grid-template-rows: 60% 15% 25%;
     align-items: center;
     place-items: center;
-    box-shadow: $lightShadow;
+    box-shadow: $shadow;
 
 
     &__info {
@@ -20,7 +20,7 @@
         top: 4%;
         right: 4%;
         font-size: $smallIcon;
-        color: $darkBlue;
+        color: $logoPurp;
     }
 
     &__image {
@@ -34,23 +34,8 @@
 
     &__title{
         font-size: max($mediumFont, 1.4em);
-        color: $darkBlue;
-        cursor: pointer;
-    }
-    
-    &__button{
-        width: 40%;
-        border-radius: 40px;
-        padding: 2%;
-        outline: none;
-        border: $snow;
-        font-size: max($mediumFont, 1em);
-        background-color: $darkBlue;
         color: $snow;
         cursor: pointer;
     }
-
-    &__button:active {
-        transform: translateY(.2em);
-    }
+    
 }

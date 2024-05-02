@@ -5,11 +5,10 @@
 .container {
     height: 100%;
     width: 100%;
-    background: $darkPurple;
+    background: $black;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% auto 10%;
-    row-gap: 1em;
+    grid-template-rows: 20% 70% 10%;
     
     &__header {
         grid-row: 1;
@@ -17,7 +16,8 @@
     }
     
     &__main {
-        grid-row: 2;        
+        grid-row: 2;
+        padding: 2% 4%;        
     }
 
     &__footer {

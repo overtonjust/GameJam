@@ -1,5 +1,87 @@
+@import '/src/styles/shared.scss';
 
 
-.testbody {
-    // background-image: url('/src/assets/About.png');
+
+.about {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    place-items: center;
+
+    &__info {
+        height: 50%;
+        width: 50%;
+        grid-column: 1;
+        background-color: $grey;
+        opacity: .9;
+        border-radius: 2rem;
+        padding: 4% 2% 2%;
+        display: grid;
+        grid-template-rows: 20% 60% 20%;
+        row-gap: 2%;
+        box-shadow: $shadow;
+    }
+
+    &__title {
+        grid-row: 1;
+        color: $logoPurp;
+        font-size: $largeFont;
+        text-align: center;
+    }
+
+    &__description { 
+        grid-row: 2;
+        color: $snow;
+        font-size: $mediumFont;
+        
+    }
+
+    &__links {
+        grid-row: 3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__home{
+        color: $logoPurp;
+        text-decoration: none;
+        font-size: $smallFont;
+        cursor: pointer;
+    }
+
+
+    &__aside {
+        grid-column: 2;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__shadow {
+        position: absolute;
+        z-index: 0;
+        width: 65%;
+        height: 65%;
+        background: $imageShadow;
+        border-radius: 50%;
+        filter: blur(.8em);
+    }
+
+    &__image{
+        z-index: 1;
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        object-fit: cover;
+        
+    }
 }
+
+

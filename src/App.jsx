@@ -22,19 +22,14 @@ import DefaultLayout from './layouts/DefaultLayout';
 
 
 
-
-
-
-
-
 function App() {
   const [aboutData, setAboutData] = useState(false);
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<DefaultLayout/>}>
-        <Route index element={<Home pages={data} updateAbout={setAboutData}/>} />
-        <Route path='/about' element={<About data={aboutData} />} />
+        <Route index element={<Home pages={data} about={aboutData} updateAbout={setAboutData}/>} />
+        <Route path={'/about/:id'} element={<About data={aboutData} />} />
       </Route>
     )
   )

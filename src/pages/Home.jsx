@@ -8,14 +8,14 @@ import { faTableList } from '@fortawesome/free-solid-svg-icons';
 import Card from '../components/Card/Card';
 
 function Home(props) {
-    const { pages, updateAbout } = props;
+    const { pages, updateAbout, about } = props;
 
     return (
         <main className='home'>
-            <section className="home__bubble">
+            <section className="home__directory">
                 {pages.map(page => {
                     return (
-                        <Card data={page} updateAbout={updateAbout} key={page.id}/>
+                        <Card data={page} about={about} updateAbout={updateAbout} key={page.id}/>
                     )
                 })}
             </section>

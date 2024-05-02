@@ -1,13 +1,22 @@
-$black: #333333;
-$background: linear-gradient(90deg, rgba(244,237,237,1) 0%, rgba(25,11,40,1) 100%);
-$darkPurple: #190B28;
-$orange: #F39237;
+// Basic Template
+
+$black: #1A1A1A;
+$grey: #333333;
 $logoPurp: #9C23A9;
-$darkBlue: #41658A;
-$brown: #7A542E;
 $snow: #F4EDED;
-$cyan: #30BCED;
+$darkBlue: #41658A;
+$background: linear-gradient(90deg, $logoPurp 0%, $black 100%);
 $green: #21BD26;
+$imageShadow: radial-gradient(circle, $darkBlue 30%, $logoPurp 100%);
+
+
+$orange: #F39237;
+$darkPurple: #190B28;
+$shadowPurp: #201230;
+$shadowBlue: #233c54;
+$brown: #402302;
+$cyan: #30BCED;
+$blueGreen: #0B2828;
 
 $headerFont: calc(5 * (1vh + 1vw));
 $largeFont: calc(1.6 * (1vh + 1vw));
@@ -16,4 +25,6 @@ $smallFont: calc(.6* (1vh + 1vw));
 
 $smallIcon: calc(1 * (1vh + 1vw));
 
-$lightShadow: .2em .2em .2em $black;
+$shadow: .2em 0 .4em .2em $grey;
+
+

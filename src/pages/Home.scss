@@ -7,12 +7,12 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    padding: 2% 4% 2% 12%;
     overflow-y: auto;
 
     
-    &__bubble{
+    &__directory{
         height: 100%;
+        width: 100%;
         grid-column: 1;
         display: grid;
         grid-template-columns: repeat(auto-fit, 18em);
@@ -23,13 +23,13 @@
 
     &__aside {
         grid-column: 2;
-        background-color: $darkBlue;
+        background-color: $grey;
         opacity: .9;
         border-radius: 2rem;
-        box-shadow: 0 0 .4em $black;
         padding: 4% 0% 0% 2%;
         display: grid;
         grid-template-rows: 20% 80%;
+        box-shadow: $shadow;
     }
 
     
@@ -42,8 +42,8 @@
         font-size: $largeFont;
         text-align: center;
         border-radius: 1rem 1rem 0 0;
-        color: $snow;
-        border-bottom: 2px solid $black;
+        color: $logoPurp;
+        border-bottom: 2px solid $snow;
     }
     
     &__content {
@@ -80,7 +80,7 @@
     }
 
     &__highlight {
-        color: $orange;
+        color: $logoPurp;
     }
 
     &__img {
@@ -91,7 +91,7 @@
     }
 
     &__link {
-        color: $orange;
+        color: $logoPurp;
     }
     
     &__order {
@@ -110,7 +110,7 @@
 
     &__item {
         font-size: $smallFont;
-        color: $cyan;
+        color: $green;
         align-self: center;
     }
 
@@ -131,7 +131,7 @@
     &__icon {
         font-size: 2em;
         align-self: center;
-        color: $cyan;
+        color: $logoPurp;
     }
 }
 

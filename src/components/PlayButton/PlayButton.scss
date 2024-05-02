@@ -1,0 +1,19 @@
+@import '/src/styles/shared.scss';
+
+
+.play-button {
+    width: 40%;
+    max-width: 6rem;
+    border-radius: 40px;
+    padding: 2%;
+    outline: none;
+    border: $snow;
+    font-size: max($mediumFont, 1em);
+    background-color: $darkBlue;
+    color: $snow;
+    cursor: pointer;
+}
+
+.play-button:active {
+    transform: translateY(.2em);
+}
