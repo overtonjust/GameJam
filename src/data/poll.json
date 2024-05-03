@@ -1,0 +1,74 @@
+[
+    {
+        "label": "Chan's Peking",
+        "value": 10,
+        "image": {
+            "src": "../src/assets/poll-images/chinese.png",
+            "alt": "Bowl of general tsos chicken surrounded by broccoli"
+        }
+    },
+    {
+        "label": "Five Guys",
+        "value": 1,
+        "image": {
+            "src": "../src/assets/poll-images/five-guys.png",
+            "alt": "Five guys cheeseburger, fries and milkshake"
+        }
+    },
+    {
+        "label": "Greek",
+        "value": 2,
+        "image": {
+            "src": "../src/assets/poll-images/Greek.png",
+            "alt": "Close up of a gyro sandwich"
+        }
+    },
+    {
+        "label": "Gymkhana",
+        "value": 3,
+        "image": {
+            "src": "../src/assets/poll-images/Gymkhana.png",
+            "alt": "Man looking at blown up spread of indian food."
+        }
+    },
+    {
+        "label": "Hudson & Packard",
+        "value": 4,
+        "image": {
+            "src": "../src/assets/poll-images/pizza.png",
+            "alt": "Zoom in angle shot of pesto and cheese pizza."
+        }
+    },
+    {
+        "label": "Mexicali Blue",
+        "value": 5,
+        "image": {
+            "src": "../src/assets/poll-images/mexican.png",
+            "alt": "A burrito cut in half with one half leaning on the other."
+        }
+    },
+    {
+        "label": "Rossi's Deli",
+        "value": 6,
+        "image": {
+            "src": "../src/assets/poll-images/rossis.png",
+            "alt": "Chick parmesan sandwich on muffaletta bread, cut into four slices with one slice removed."
+        }
+    },
+    {
+        "label": "Sushi Village",
+        "value": 7,
+        "image": {
+            "src": "../src/assets/poll-images/sushi.png",
+            "alt": "Angled rectangular plate filled with sushi topped with avocado and tobiko."
+        }
+    },
+    {
+        "label": "Tamarind",
+        "value": 8,
+        "image": {
+            "src": "../src/assets/poll-images/tamarind.png",
+            "alt": "Bowl of orange curry with the Tamarind logo on the bowl handle."
+        }
+    }
+]

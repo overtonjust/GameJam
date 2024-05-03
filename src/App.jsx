@@ -12,6 +12,7 @@ import {
 // Pages
 import Home from './pages/Home';
 import About from './pages/About';
+import Poll from './pages/Poll';
 
 // Components
 import data from './data/data.json';
@@ -30,6 +31,7 @@ function App() {
       <Route path='/' element={<DefaultLayout/>}>
         <Route index element={<Home pages={data} about={aboutData} updateAbout={setAboutData}/>} />
         <Route path={'/about/:id'} element={<About data={aboutData} />} />
+        <Route path='/poll' element={<Poll/>} />
       </Route>
     )
   )

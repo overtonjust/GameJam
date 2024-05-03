@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Home.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTableList } from '@fortawesome/free-solid-svg-icons';
+import food from '../data/poll.json';
 
 // Components
 import Card from '../components/Card/Card';
@@ -25,10 +26,10 @@ function Home(props) {
                     <section className="home__winner">
                         <div className="home__winner-text">
                             <p className='home__victor'>Current Winner: <span className='home__highlight'>Indian</span></p>
-                            <p className='home__vote'>Vote here: <NavLink className='home__link'>Link</NavLink></p>
+                            <p className='home__vote'>Vote here: <NavLink className='home__link' to='/poll'>Poll</NavLink></p>
                             <p className='home__vote'>Order here: <NavLink className='home__link'>Link</NavLink></p>
                         </div>
-                        <img className='home__img' src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=2271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                        <img className='home__img' src={food[8].image.src} alt="" />
                     </section>
                     <section className="home__order">
                         <ul className='home__list'>Orders in:

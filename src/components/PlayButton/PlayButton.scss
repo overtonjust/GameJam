@@ -11,6 +11,7 @@
     font-size: max($mediumFont, 1em);
     background-color: $darkBlue;
     color: $snow;
+    transition: .1s ease-in;
     cursor: pointer;
 }
 

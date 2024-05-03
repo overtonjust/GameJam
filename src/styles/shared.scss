@@ -15,15 +15,15 @@ $darkPurple: #190B28;
 $shadowPurp: #201230;
 $shadowBlue: #233c54;
 $brown: #402302;
-$cyan: #30BCED;
+$cyan: rgb(48, 188, 237);
 $blueGreen: #0B2828;
 
 $headerFont: calc(5 * (1vh + 1vw));
 $largeFont: calc(1.6 * (1vh + 1vw));
-$mediumFont: calc(.8 * (1vh + 1vw));
-$smallFont: calc(.6* (1vh + 1vw));
+$mediumFont: calc(.7 * (1vh + 1vw));
+$smallFont: calc(.5* (1vh + 1vw));
 
-$smallIcon: calc(1 * (1vh + 1vw));
+$smallIcon: calc(.8 * (1vh + 1vw));
 
 $shadow: .2em 0 .4em .2em $grey;
 
