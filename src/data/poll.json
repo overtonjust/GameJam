@@ -16,7 +16,15 @@
         }
     },
     {
-        "label": "Greek",
+        "label": "Golden Buddha",
+        "value": 1,
+        "image": {
+            "src": "../src/assets/poll-images/thai.png",
+            "alt": "Thai spring rolls and mushroom soup"
+        }
+    },
+    {
+        "label": "Athena",
         "value": 2,
         "image": {
             "src": "../src/assets/poll-images/Greek.png",

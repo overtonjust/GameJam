@@ -1,8 +1,58 @@
-
+@import '../styles/shared.scss';
 
 .vote {
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    &__form {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8%;
+    }
+
+    &__title {
+        font-size: $largeFont;
+        color: $snow;
+        border-bottom: 2px solid $logoPurp;
+    }
+
+    &__input {
+        background-color: $grey;
+        border: none;
+        outline: none;
+        border-radius: 2em;
+        padding-left: 1em;
+        width: calc(14 * 1vw);
+        height: calc(4 * 1vh);
+        box-shadow: 0 0 .1em $snow;
+        font-size: calc(.6 * (1vh + 1vw));
+        color: $logoPurp;
+    }
+
+    &__input::placeholder{
+        color: $snow;
+    }
+
+
+     &__submit {
+        background-color: $grey;
+        color: $snow;
+        font-size: calc(.6 * (1vh + 1vw));
+        padding: 1% 2%;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 .1em $snow;
+        border-radius: 2em;
+        cursor: pointer;
+        transition: .1s ease-in;
+    }
+    
+    &__submit:hover {
+        color: $logoPurp;
+        transform: translateY(-.4em);
+     }
 }
