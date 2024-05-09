@@ -25,16 +25,20 @@
         border: none;
         outline: none;
         border-radius: 2em;
-        padding-left: 1em;
+        padding: 0 1em;
         width: calc(14 * 1vw);
         height: calc(4 * 1vh);
-        box-shadow: 0 0 .1em $snow;
+        box-shadow: 0 0 .2em $snow;
         font-size: calc(.6 * (1vh + 1vw));
         color: $logoPurp;
     }
 
     &__input::placeholder{
         color: $snow;
+    }
+
+    &__input:hover::placeholder {
+        color: $logoPurp;
     }
 
 
@@ -45,7 +49,7 @@
         padding: 1% 2%;
         border: none;
         outline: none;
-        box-shadow: 0 0 .1em $snow;
+        box-shadow: 0 0 .2em $snow;
         border-radius: 2em;
         cursor: pointer;
         transition: .1s ease-in;
