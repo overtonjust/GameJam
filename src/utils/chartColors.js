@@ -1,7 +1,3 @@
-import { color } from "chart.js/helpers";
-
-
-
 
 const backgroundColors= [
     'rgba(255, 89, 94, .6)',
@@ -30,23 +26,4 @@ const borderColors= [
     'rgba(106, 76, 147, 1)'
     ];
 
-
-const pollData = {
-    labels: ["Chan's Peking", "Five Guys", "Golden Buddha", "Athena", "Gymkhana","Hudson & Packard", "Mexicali Blue", "Rossi's Deli", "Sushi Village", "Tamarind"],
-    datasets: [
-        {
-            label: "# of Votes",
-            names: ['test'],
-            data: [0,0,0,0,0,0,0,0,0,0],
-            backgroundColor: backgroundColors,
-            borderColor: borderColors,
-            borderWidth: 1       
-        }  ,      
-    ]
-}
-
-function updateData(index){
-   return pollData.datasets[0].data[index]++
-}
-
-export {pollData ,updateData};
+export {backgroundColors, borderColors};

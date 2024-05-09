@@ -1,23 +1,22 @@
 // Tools
-
 import './Poll.scss';
-import { useState, useRef } from 'react';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Pie, getDatasetAtEvent } from 'react-chartjs-2';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import {pollData, updateData}  from '../utils/pollData';
 import Select from 'react-select';
+import { useLocalStorage } from '../utils/LocaleStorage';
 
-ChartJS.register(ArcElement, Tooltip, Legend);
+// Components
+import Chart from '../components/Chart/Chart';
+
 
 
 function Poll () {
     const [inputs,setInputs] = useState({});
 
-    const chartRef = useRef();
+    const [votes, setVotes] = useLocalStorage('votes', [0,0,0,0,0,0,0,0,0,0])
+    const [namesArr,setNamesArr] = useLocalStorage('namesArr', [])
 
-
-    const votes = [
+    const voteOptions = [
         {name:'vote', value: 0 , label: "Chan's Peking"},
         {name:'vote', value: 1 , label: 'Five Guys'},
         {name:'vote', value: 2 , label: 'Golden Buddha'},
@@ -29,6 +28,7 @@ function Poll () {
         {name:'vote', value: 8 , label: "Sushi Village"},
         {name:'vote', value: 9 , label: "Tamarind"}
     ]
+
 
     const handleInput = (event) => {
         const name = event.target.name;
@@ -42,11 +42,27 @@ function Poll () {
         setInputs(values => ({...values, [name] : value }))
     }
   
-
     const handleSubmit = (event) => {
         event.preventDefault()
-        updateData(inputs.vote)
+        event.target.reset()
+        if(namesArr.includes(inputs.name.toLowerCase())){
+            alert(`${inputs.name} has already voted.`) 
+        } 
+        else {
+            setNamesArr(names => ([...names, inputs.name.toLowerCase()]));
+            setVotes(votes => {
+                const updateVotesArr =  votes.map((vote,index) => {
+                    if(index === inputs.vote) {
+                        vote++
+                    }
+                    return vote
+                })
+                return updateVotesArr;
+            })
+        }
+        
     }
+    
 
     return (
         <>
@@ -54,6 +70,7 @@ function Poll () {
             <form className='vote__form' onSubmit={handleSubmit} >
                 <h3 className='vote__title'>Takeaway Vote</h3>
                 <input 
+                    
                     onChange={handleInput}
                     type="text" 
                     name='name'
@@ -64,7 +81,7 @@ function Poll () {
                 />
                 <Select 
                     onChange={handleSelect}
-                    options={votes}
+                    options={voteOptions}
                     isClearable={true}
                     required={true}
                     placeholder={'Restaurant Choice'}
@@ -132,7 +149,7 @@ function Poll () {
                     Go back home
                 </NavLink>
             </form>
-            <Pie  data={pollData} />
+           <Chart data={votes}/>
         </section>
         </>
     )

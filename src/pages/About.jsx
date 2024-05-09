@@ -16,7 +16,6 @@ function About () {
     const { id } = useParams();  
 
     useEffect(() => {
-    //  console.log(apps.find(app => app.id === id))
        setData(apps.find(app => app.id === id))
     },[])
 
