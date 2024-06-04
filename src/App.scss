@@ -7,3 +7,27 @@ body {
     // background-size: cover;
     // background-attachment: fixed;
 }
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    background: $black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 70% 10%;
+    
+    &__header {
+        grid-row: 1;
+        grid-column: span 3;
+    }
+    
+    &__main {
+        grid-row: 2;
+        padding: 2% 4%;        
+    }
+
+    &__footer {
+        grid-row: 3;
+    }
+}

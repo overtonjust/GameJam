@@ -12,6 +12,7 @@ import Chart from '../components/Chart/Chart';
 
 function Poll () {
     const [inputs,setInputs] = useState({});
+    const [chosenOption, setChosenOption] = useState('Restaurant Choice')
 
     const [votes, setVotes] = useLocalStorage('votes', [0,0,0,0,0,0,0,0,0,0])
     const [namesArr,setNamesArr] = useLocalStorage('namesArr', [])
@@ -29,7 +30,6 @@ function Poll () {
         {name:'vote', value: 9 , label: "Tamarind"}
     ]
 
-
     const handleInput = (event) => {
         const name = event.target.name;
         const value = event.target.value;
@@ -37,14 +37,18 @@ function Poll () {
     }
 
     const handleSelect = (selectedOption) => {
+
         const name = selectedOption.name;
         const value = selectedOption.value;
-        setInputs(values => ({...values, [name] : value }))
+        setChosenOption(selectedOption);
+        setInputs(values => ({...values, [name] : value }));
+        
     }
   
     const handleSubmit = (event) => {
         event.preventDefault()
         event.target.reset()
+        setChosenOption('Restaurant Choice')
         if(namesArr.includes(inputs.name.toLowerCase())){
             alert(`${inputs.name} has already voted.`) 
         } 
@@ -80,11 +84,12 @@ function Poll () {
                     required 
                 />
                 <Select 
+                    value={chosenOption}
                     onChange={handleSelect}
                     options={voteOptions}
                     isClearable={true}
                     required={true}
-                    placeholder={'Restaurant Choice'}
+                    placeholder={chosenOption}
                     styles={{
                         control: (baseStyles, state) => ({
                             ...baseStyles,

@@ -8,7 +8,7 @@ import logo from '/src/assets/GJLogoSansUndertaleGlow.png';
 
 function Header () {
     return (
-        <div className="header">
+        <div className="container__header header">
             <h2 className='header__title'>GameJam</h2>
             <img src={logo} alt="logo" className='header__logo' />
         </div>

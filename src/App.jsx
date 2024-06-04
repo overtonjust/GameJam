@@ -1,13 +1,7 @@
 // Tools
 import { useState } from 'react';
 import './App.scss';
-import {
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  NavLink
-} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home';
@@ -16,28 +10,25 @@ import Poll from './pages/Poll';
 
 // Components
 import data from './data/data.json';
-import Header from './components/Header/Header';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
-// Layouts
-import DefaultLayout from './layouts/DefaultLayout';
 
 
 
 function App() {
   const [aboutData, setAboutData] = useState(false);
 
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path='/' element={<DefaultLayout/>}>
-        <Route index element={<Home pages={data} about={aboutData} updateAbout={setAboutData}/>} />
+  return (
+    <div className='container'>
+      <Header /> 
+      <Routes>
+        <Route path='/' element={<Home pages={data} about={aboutData} updateAbout={setAboutData}/>}/>
         <Route path={'/about/:id'} element={<About data={aboutData} />} />
         <Route path='/poll' element={<Poll/>} />
-      </Route>
-    )
-  )
-
-  return (
-      <RouterProvider router={router}/>
+      </Routes>
+      <Footer/>
+    </div>
   )
 }
 
