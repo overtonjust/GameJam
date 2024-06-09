@@ -10,12 +10,12 @@ import Author from '/src/assets/Author.png';
 
 function Footer () {
     return(
-        <footer className='container__footer navbar'>
-            <img className='navbar__img' src={Author} alt="Photo of Justin Overton" />
-            <p className='navbar__author'>Site made by Justin Overton</p>
-            <div className="navbar__links">
-                <NavLink to='https://github.com/overtonjust'><FontAwesomeIcon icon={faGithub} className='navbar__icon' /></NavLink>
-                <NavLink to='https://www.linkedin.com/in/justin-overton/'><FontAwesomeIcon icon={faLinkedin} className='navbar__icon' /></NavLink>
+        <footer className='footer'>
+            <img className='footer__img' src={Author} alt="Photo of Justin Overton" />
+            <p className='footer__author'>Site made by Justin Overton</p>
+            <div className="footer__links">
+                <NavLink to='https://github.com/overtonjust'><FontAwesomeIcon icon={faGithub} className='footer__icon' /></NavLink>
+                <NavLink to='https://www.linkedin.com/in/justin-overton/'><FontAwesomeIcon icon={faLinkedin} className='footer__icon' /></NavLink>
             </div>
         </footer>
     )

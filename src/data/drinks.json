@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Angel's Delight",
+        "ingredients": ["Gin","Triple Sec", "Heavy Cream", "Grenadine"]
+    },
+    {
+        "name": "Grasshopper",
+        "ingredients": ["Creme de Cacao", "Creme de Menthe", "Heavy Cream"]
+    },
+    {
+        "name": "Baron Samedi",
+        "ingredients": ["Dark Rum", "Lime Juice", "Cinnamon Syrup", "Falernum"]
+    },
+    {
+        "name": "Hurricane",
+        "ingredients": ["Light Rum", "Dark Rum", "Passion Fruit Syrup", "Orange Juice", "Lime Juice"]
+    },
+    {
+        "name": "Blue Hawaiian",
+        "ingredients": ["Vodka", "Pineapple Juice", "Lemon Juice", "Blue Curacao"]
+    },
+    {
+        "name": "Kamikaze",
+        "ingredients": ["Citrus" ,"Vodka", "Triple Sec", "Lime Juice"]
+    },
+    {
+        "name": "Corpse Reviver No.2",
+        "ingredients": ["Gin", "Lemon Juice", "Triple Sec", "Lillet Blanc"]
+    },
+    {
+        "name": "King's Valley",
+        "ingredients": ["Scotch", "Triple Sec","Lime Juice", "Blue Curacao"]
+    },
+    {
+        "name": "Dark N' Stormy",
+        "ingredients": ["Dark Rum", "Ginger Syrup", "Lime Juice", "Seltzer"]
+    },
+    {
+        "name": "Lemon Drop",
+        "ingredients": ["Citrus", "Vodka", "Triple Sec", "Lemon Juice"]
+    },
+    {
+        "name": "Fluffy Cloud",
+        "ingredients": ["Vodka", "Triple Sec", "Orange Soda", "Heavy Cream"]
+    },
+    {
+        "name": "Little Bit Country",
+        "ingredients": ["Bourbon", "Lemon Juice", "Maple Syrup", "Maraschino", "Jalapeno", "Bitters"]
+    },
+    {
+        "name": "Fuzzy Navel",
+        "ingredients": ["Peach Schnapps", "Orange Juice" ]
+    },
+    {
+        "name": "Moscow Mule",
+        "ingredients": ["Vodka", "Lime Juice", "Ginger Syrup", "Seltzer"]
+    },
+    {
+        "name": "Gordon's Cup",
+        "ingredients": ["Gin", "Simple Syrup", "Cucumber", "Lime Juice", "Salt & Pepper"]
+    },
+    {
+        "name": "Pain Killer",
+        "ingredients": ["Light Rum", "Pineapple Juice", "Orange Juice", "Coconut Cream"]
+    },
+    {
+        "name": "Gordon's Breakfast",
+        "ingredients": ["Gin", "Simple Syrup", "Cucumber", "Lime Juice", "Worchestershire", "Hot Sauce", "Salt & Pepper"]
+    },
+    {
+        "name": "Surfer On Acid",
+        "ingredients": ["Jaegermeister", "Dark Rum", "Pineapple Juice", "Orgeat Syrup", "Lime Juice"]
+    }
+]

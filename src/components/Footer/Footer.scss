@@ -1,8 +1,8 @@
 @import '/src/styles/shared.scss';
 
 
-.navbar {
-    height: 100%;
+.footer {
+    height: 8vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
 
 
     &__author {
-        color: $snow;
+        color: $grey;
         font-size: $smallFont;
         margin-left: 1%;
         margin-right: 4%;

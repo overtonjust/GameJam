@@ -1,7 +1,7 @@
 // Tools
 import { useRef } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Pie, getDatasetAtEvent } from 'react-chartjs-2';
+import { Pie, getDatasetAtEvent,  } from 'react-chartjs-2';
 import {backgroundColors, borderColors}  from '../../utils/chartColors';
 
 

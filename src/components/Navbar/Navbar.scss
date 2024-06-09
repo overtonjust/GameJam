@@ -1,24 +1,22 @@
 @import '/src/styles/shared.scss';
 
 
-.header {
-    height: 100%;
+.navbar {
+    height: 10vh;
     width: 100%;
-    padding: 2em;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-around;
 
     &__title {
-        font-size: $headerFont;
+        font-size: $largeFont;
         background: $background;
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     &__logo{
-        height: 3vh;
-        width: 2vw;
+        height: 4vh;
+        width: 4vw;
     }
 }
