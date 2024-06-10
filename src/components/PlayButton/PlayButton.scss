@@ -2,15 +2,13 @@
 
 
 .play-button {
-    width: 40%;
+    width: 60%;
     max-width: 6rem;
     border-radius: 40px;
     padding: 2%;
     outline: none;
-    border: $snow;
+    background-color: $green;
     font-size: max($mediumFont, 1em);
-    background-color: $darkBlue;
-    color: $snow;
     transition: .1s ease-in;
     cursor: pointer;
 }

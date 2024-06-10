@@ -2,40 +2,42 @@
 
 .card{
     position: relative;
-    width: calc(18 * 2vw);
-    max-width: 16em;
-    height: calc(18 * 2vh);
-    max-height: 16em;
-    border-radius: 12%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60% 15% 25%;
+    width: calc(8 * 2vw);
+    height: calc(12 * 2vh);
+    border-radius: 2em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    place-items: center;
-    box-shadow: $shadow;
+    gap: 1em;
 
+    &__image {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 2em 2em 0 0;
+        cursor: pointer;
+    }
 
     &__info {
         position: absolute;
         top: 4%;
         right: 4%;
         font-size: $smallIcon;
-        color: $logoPurp;
+        color: $green;
     }
 
-    &__image {
-        grid-row: 1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 12% 12% 0 0;
-        cursor: pointer;
-    }
 
-    &__title{
-        font-size: max($mediumFont, 1.4em);
-        color: $snow;
-        cursor: pointer;
-    }
+        &__details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .6em;
+        }
+
+            &__title{
+                font-size: max($mediumFont, 1.4em);
+                cursor: pointer;
+            }
     
 }

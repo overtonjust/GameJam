@@ -23,23 +23,23 @@ function About () {
     return (
         <>
             {data.title && (
-                 <main className="about" key={data.id}>
-                 <section className='about__info'>
-                     <h2 className='about__title'>{data.title}</h2>
-                     <p className='about__description'>{data.description}</p>
-                     <div className="about__links">
-                         <NavLink className='about__home' to='/'>
-                             Go back home
-                         </NavLink>
-                         <PlayButton info={data.type} className='about__button' />
-                     </div>
-                 </section>
-                 <aside className='about__aside'>
-                     <div className="about__shadow">
-                     </div>
-                     <img className='about__image' src={data.image.src} alt={data.image.alt} width='20px'/>
-                 </aside>
-             </main>
+                <main className="about" key={data.id}>
+                    <section className='about__info'>
+                        <h2 className='about__title'>{data.title}</h2>
+                        <p className='about__description'>{data.description}</p>
+                        <div className="about__links">
+                            <NavLink className='about__home' to='/'>
+                                Go back home
+                            </NavLink>
+                            <PlayButton info={data.type} className='about__button' />
+                        </div>
+                    </section>
+                    <aside className='about__aside'>
+                        <div className="about__shadow">
+                        </div>
+                        <img className='about__image' src={data.image.src} alt={data.image.alt} width='20px'/>
+                    </aside>
+                </main>
             )}              
         </>
     )

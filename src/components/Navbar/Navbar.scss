@@ -2,21 +2,24 @@
 
 
 .navbar {
-    height: 10vh;
+    height: 6vh;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 2em;
 
-    &__title {
-        font-size: $largeFont;
-        background: $background;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+        &__brand {
+            display: flex;
+            align-items: center;
+        }
 
-    &__logo{
-        height: 4vh;
-        width: 4vw;
-    }
+                &__title {
+                    font-size: $largeFont; 
+                }
+
+                &__logo{
+                    height: 2vh;
+                    width: 2vw;
+                }
 }

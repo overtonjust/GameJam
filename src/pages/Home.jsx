@@ -21,8 +21,8 @@ function Home(props) {
                 <header className='home__header'>
                     <h2 className='home__title'>Chaturday Dinner (date)</h2>
                     <article className='home__content'>
-                        <section className="home__winner">
-                            <div className="home__winner-text">
+                        <section className="home__results">
+                            <div className="home__poll-info">
                                 <p className='home__victor'>Current Winner: <span className='home__highlight'>Indian</span></p>
                                 <p className='home__vote'>Vote here: <NavLink className='home__link' to='/poll'>Poll</NavLink></p>
                                 <p className='home__vote'>Order here: <NavLink className='home__link'>Link</NavLink></p>
@@ -38,8 +38,6 @@ function Home(props) {
                                 <p className='home__document'>Order to be placed</p>
                                 <FontAwesomeIcon icon={faTableList} className='home__icon'/>
                             </div>
-                        </section>
-                        <section className="home__opt">
                             <ul className='home__list'>Opting out:
                                 <li className='home__item'>Justin</li>
                                 <li className='home__item'>Steve</li>

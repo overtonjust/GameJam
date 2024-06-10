@@ -19,8 +19,10 @@ function Card (props) {
             <NavLink to={`/about/${data.id}`} className='card__info'>
                 <FontAwesomeIcon icon={faMagnifyingGlass} onClick={() => updateAbout(data)} />
             </NavLink>
-        <p className='card__title'>{data.title}</p>
-            <PlayButton info={data.type} />
+            <div className="card__details">
+                <p className='card__title'>{data.title}</p>
+                <PlayButton info={data.type} />
+            </div>
         </div>
     )
 }

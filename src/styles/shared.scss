@@ -1,30 +1,18 @@
 // Basic Template
 
-$black: #1A1A1A;
-$grey: #333333;
-$logoPurp: #9C23A9;
-$snow: #F4EDED;
-$darkBlue: #41658A;
-$background: linear-gradient(90deg, $logoPurp 0%, $black 100%);
-$green: #21BD26;
-$imageShadow: radial-gradient(circle, $darkBlue 30%, $logoPurp 100%);
-
-
-$orange: #F39237;
-$darkPurple: #190B28;
-$shadowPurp: #201230;
-$shadowBlue: #233c54;
-$brown: #402302;
-$cyan: rgb(48, 188, 237);
-$blueGreen: #0B2828;
+$yellow: #FCC56E;
+$white: #F4F1EE;
+$blue: #9DE7FF;
+$green: #CEFC94;
+$black: #000;
+$text: #7C6542;
 
 $headerFont: calc(5 * (1vh + 1vw));
-$largeFont: calc(1.6 * (1vh + 1vw));
+$largeFont: calc(1.2 * (1vh + 1vw));
 $mediumFont: calc(.7 * (1vh + 1vw));
 $smallFont: calc(.5* (1vh + 1vw));
 
 $smallIcon: calc(.8 * (1vh + 1vw));
 
-$shadow: .2em 0 .4em .2em $grey;
 
 

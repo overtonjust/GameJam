@@ -2,37 +2,38 @@
 
 
 .footer {
+    margin-top: auto;
     height: 8vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
+        &__img {
+            height: 10vh;
+            width: 12vw;
+            max-width: 3em;
+            max-height: 3em;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-    &__author {
-        color: $grey;
-        font-size: $smallFont;
-        margin-left: 1%;
-        margin-right: 4%;
-    }
+        &__author {
+            font-size: $smallFont;
+            margin-left: 1%;
+            margin-right: 4%;
+            color: $text;
+        }
 
-    &__img {
-        height: 10vh;
-        width: 12vw;
-        max-width: 3em;
-        max-height: 3em;
-        border-radius: 50%;
-        object-fit: cover;
-    }
+        &__links {
+            display: flex;
+            align-items: center;
+            gap: 12%;
+        }
 
-    &__links {
-        display: flex;
-        align-items: center;
-        gap: 12%;
-    }
+            &__icon {
+                font-size: $smallIcon;
+                color: $blue;
+            }
 
-    &__icon {
-        font-size: $smallIcon;
-        color: $snow;
-    }
 }

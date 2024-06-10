@@ -16,47 +16,47 @@
 
     &__title {
         font-size: $largeFont;
-        color: $snow;
-        border-bottom: 2px solid $logoPurp;
+        color: $white;
+        border-bottom: 2px solid $black;
     }
 
     &__input {
-        background-color: $grey;
+        background-color: $black;
         border: none;
         outline: none;
         border-radius: 2em;
         padding: 0 1em;
         width: calc(14 * 1vw);
         height: calc(4 * 1vh);
-        box-shadow: 0 0 .2em $snow;
+        box-shadow: 0 0 .2em $white;
         font-size: calc(.6 * (1vh + 1vw));
-        color: $logoPurp;
+        color: $black;
     }
 
     &__input::placeholder{
-        color: $snow;
+        color: $white;
     }
 
     &__input:hover::placeholder {
-        color: $logoPurp;
+        color: $black;
     }
 
 
      &__submit {
-        background-color: $grey;
-        color: $snow;
+        background-color: $black;
+        color: $white;
         font-size: calc(.6 * (1vh + 1vw));
         padding: 1% 2%;
         border: none;
         outline: none;
-        box-shadow: 0 0 .2em $snow;
+        box-shadow: 0 0 .2em $white;
         border-radius: 2em;
         cursor: pointer;
         transition: .1s ease-in;
     }
     
     &__submit:hover {
-        color: $logoPurp;
+        color: $black;
         transform: translateY(-.4em);
      }
 }

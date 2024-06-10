@@ -2,141 +2,114 @@
 
 
 .home {
-    max-height: 90vh;
+    height: 94vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
     overflow-y: auto;
-    padding: 2% 2% 0 2%;
+    padding-right: 2%;
     
     &__aside {
+        max-width: 250px;
         border: 2px solid black;
     }
 
     &__dashboard{
-        padding: 0 2% 2% 2%;
+        padding: 0 2%;
         display: flex;
         flex-direction: column;
         gap: 2em;
     }
+       
+        &__header {
+            align-self: center;
+            width: 90%;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+            &__title {
+                background-color: $yellow;
+                font-size: $largeFont;
+                font-weight: 400;
+                text-align: center;
+                border-radius: 1rem 1rem 0 0;
+                color: $black;
+                padding: .4em;               
+            }
     
-    &__options-list{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 3em;
-
-    }
-
-    &__header {
-        background-color: $grey;
-        opacity: .9;
-        border-radius: 2rem;
-        padding: 4% 0% 0% 2%;
-        display: flex;
-        flex-direction: column;
-        box-shadow: $shadow;
-    }
-
+            &__content {
+                background-color: #fff;
+                height: 100%;
+                width: 100%;
+                padding: 2% 8%;
+                display: flex;
+                justify-content: space-between;
+            }
     
-    &__title {
-        height: 100%;
-        width: 90%;
-        align-self: center;
-        place-self: center;
-        font-size: $largeFont;
-        text-align: center;
-        border-radius: 1rem 1rem 0 0;
-        color: $logoPurp;
-        border-bottom: 2px solid $snow;
-    }
+                &__results {
+                    display: flex;
+                    gap: 2em;
+                }
+                
+                    &__poll-info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                    }
+
+                        &__victor, &__vote {
+                            font-size: $mediumFont;
+                            color: $text;
+                        }
+                        
+                        
+                    &__img {
+                        width: 10em;
+                        height: 6em;
+                        border-radius: .8em;
+                    }
+
+                &__order {
+                    display: flex;
+                    gap: 2em;
+                }
     
-    &__content {
-        height: 100%;
-        width: 100%;
-        padding: 2% 8%;
-        display: flex;
-        
-    }
-    
-    &__winner {
-        grid-row: 1;
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        align-items: center;
-    }
-    
-    &__winner-text {
-        grid-column: 1;
-        line-height: 2em;
-    }
+                    &__list, &__guide{
+                        font-size: $mediumFont;
+                        color: $text;
+                        display: flex;
+                        flex-direction: column;
+                        gap: .2em;
+                        list-style-type: none;
+                    }
+                    
+                        &__item {
+                            font-size: $mediumFont;
+                            color: $black;
+                            align-self: center;
+                        }
 
-    &__victor {
-        font-size: $mediumFont;
-        color: $snow;
+                        
+        &__options-list{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3em;
+            
+        }
+
+    &__highlight, &__link {
+        color: $black;
+        text-decoration: none;
     }
-
-    &__vote {
-        color: $snow;
-        font-size: $smallFont;
-    }
-
-    &__highlight {
-        color: $logoPurp;
-    }
-
-    &__img {
-        width: 6em;
-        height: 6em;
-        border-radius: 50%;
-        grid-column: 2;
-    }
-
-    &__link {
-        color: $logoPurp;
-    }
-    
-    &__order {
-        grid-row: 2;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__list, &__document{
-        font-size: $mediumFont;
-        color: $snow;
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-    }
-
-    &__item {
-        font-size: $smallFont;
-        color: $green;
-        align-self: center;
-    }
-
-    &__opt {
-        grid-row: 3;
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    &__guide{
-        display: flex;
-        flex-direction: column;
-        gap: 6%;
-    }
-
-
+            
     &__icon {
         font-size: 2em;
         align-self: center;
-        color: $logoPurp;
+        color: $blue;
     }
 }
 

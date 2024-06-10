@@ -15,26 +15,25 @@
         height: 50%;
         width: 50%;
         grid-column: 1;
-        background-color: $grey;
+        background-color: $white;
         opacity: .9;
         border-radius: 2rem;
         padding: 4% 2% 2%;
         display: grid;
         grid-template-rows: 20% 60% 20%;
         row-gap: 2%;
-        box-shadow: $shadow;
     }
 
     &__title {
         grid-row: 1;
-        color: $logoPurp;
+        color: $black;
         font-size: $largeFont;
         text-align: center;
     }
 
     &__description { 
         grid-row: 2;
-        color: $snow;
+        color: $white;
         font-size: $mediumFont;
         
     }
@@ -47,7 +46,7 @@
     }
 
     &__home{
-        color: $logoPurp;
+        color: $black;
         text-decoration: none;
         font-size: $smallFont;
         cursor: pointer;
@@ -69,7 +68,6 @@
         z-index: 0;
         width: 65%;
         height: 65%;
-        background: $imageShadow;
         border-radius: 50%;
         filter: blur(.8em);
     }
